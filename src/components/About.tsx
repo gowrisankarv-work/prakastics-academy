@@ -28,7 +28,7 @@ export const About: React.FC = () => {
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     e.currentTarget.src =
-      'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1000&q=85';
+      'https://images.unsplash.com/photo-1678804481496-eb44c1259dbb?auto=format&fit=crop&w=1000&q=85';
   };
 
   return (
@@ -44,17 +44,17 @@ export const About: React.FC = () => {
           {/* Left Column: Authentic Martial Arts Photo (Fitted & Responsive) */}
           <div className="lg:col-span-5 flex flex-col">
             <div className="relative w-full h-full min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-sm overflow-hidden border border-[#262626] bg-[#141414] shadow-2xl group flex flex-col justify-between">
-              {/* Background Image */}
+              {/* Background Image: Male Kyokushin Karate Practitioner */}
               <img
-                src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1000&q=85"
-                alt="Prakastic Kickboxing & Kyokushin Karate Male Fighter"
+                src="https://images.unsplash.com/photo-1678804481496-eb44c1259dbb?auto=format&fit=crop&w=1000&q=85"
+                alt="Prakastic Kickboxing & Kyokushin Karate Male Practitioner in Gi"
                 onError={handleImageError}
-                className="absolute inset-0 w-full h-full object-cover object-center filter brightness-95 contrast-110 group-hover:scale-105 transition-transform duration-700"
+                className="absolute inset-0 w-full h-full object-cover object-top filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
 
               {/* Gradient Vignette Overlays for Depth & Legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/30 to-black/40 opacity-90" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/30 to-black/40 pointer-events-none" />
               <div className="absolute inset-0 border border-white/5 pointer-events-none" />
 
               {/* Top Corner Pill */}
