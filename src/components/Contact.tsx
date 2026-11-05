@@ -8,6 +8,7 @@ import {
   CheckCircle,
   AlertCircle,
   Sparkles,
+  Navigation,
 } from 'lucide-react';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { MagneticButton } from '@/components/ui/MagneticButton';
@@ -100,9 +101,11 @@ Sent via Academy Website`;
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-neutral-400">Location</p>
-                    <p className="text-sm sm:text-base font-semibold text-white">THINDAL, ERODE, TAMIL NADU</p>
-                    <p className="text-xs text-neutral-500 mt-0.5">Easily accessible hub for martial arts training</p>
+                    <p className="text-xs uppercase tracking-wider text-neutral-400">Dojo Address</p>
+                    <p className="text-sm sm:text-base font-semibold text-white leading-snug">
+                      E.B. Nagar, First Cross Road, Medical Nagar, Maruthi Nagar, Veppampalayam, Erode, Tamil Nadu 638012
+                    </p>
+                    <p className="text-xs text-neutral-400 mt-1">Near Thindal • Accessible combat-sports facility</p>
                   </div>
                 </div>
 
@@ -171,24 +174,61 @@ Sent via Academy Website`;
               </div>
             </div>
 
-            {/* Map Placeholder Card (Configurable) */}
-            <div className="rounded-sm bg-[#141414] border border-[#262626] overflow-hidden shadow-xl">
-              <div className="p-4 border-b border-[#262626] flex items-center justify-between">
-                <span className="text-xs uppercase tracking-wider text-neutral-300 font-semibold flex items-center gap-2">
-                  <MapPin className="w-3.5 h-3.5 text-[#F04444]" />
-                  Thindal, Erode Map Area
-                </span>
-                <span className="text-[10px] text-neutral-500 font-mono">Configurable Location</span>
+            {/* Interactive Map Card with Location Symbol Highlight on Prakastic's Academy */}
+            <div className="rounded-sm bg-[#141414] border border-[#262626] overflow-hidden shadow-2xl">
+              <div className="p-4 border-b border-[#262626] flex items-center justify-between flex-wrap gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#F04444] animate-pulse" />
+                  <span className="text-xs uppercase tracking-wider text-white font-bold">
+                    Prakastic's Academy Location
+                  </span>
+                </div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=E.B.+Nagar,+First+Cross+Road,+Medical+Nagar,+Maruthi+Nagar,+Veppampalayam,+Erode,+Tamil+Nadu+638012"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-wider font-semibold text-[#F04444] hover:text-white transition-colors"
+                >
+                  <Navigation className="w-3.5 h-3.5" />
+                  Get Directions
+                </a>
               </div>
-              <div className="relative w-full h-48 bg-[#171717]">
+
+              {/* Map Canvas with Location Highlight Pin */}
+              <div className="relative w-full h-72 sm:h-80 bg-[#171717] overflow-hidden group">
                 <iframe
-                  title="Academy Location Area - Thindal, Erode, Tamil Nadu"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15652.883908865487!2d77.67484643171387!3d11.314949791484838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f014e71d34f%3A0x67dbdb3dbcf6be66!2sThindal%2C%20Erode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                  className="w-full h-full border-0 filter invert contrast-125 opacity-75"
+                  title="Prakastic's Kickboxing Kyokushin Academy - Veppampalayam, Erode"
+                  src="https://maps.google.com/maps?q=E.B.+Nagar,+First+Cross+Road,+Medical+Nagar,+Maruthi+Nagar,+Veppampalayam,+Erode,+Tamil+Nadu+638012&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  className="w-full h-full border-0 filter invert contrast-125 opacity-75 group-hover:opacity-90 transition-opacity"
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
+
+                {/* Location Symbol Highlight on Prakastic's Academy */}
+                <div className="absolute top-4 left-4 right-4 sm:right-auto sm:max-w-xs pointer-events-none">
+                  <div className="p-3.5 rounded-sm bg-[#0E0E0E]/95 backdrop-blur-md border border-red-500/50 shadow-2xl space-y-1.5 pointer-events-auto">
+                    <div className="flex items-center gap-2.5">
+                      <div className="relative flex items-center justify-center shrink-0">
+                        <span className="absolute w-5 h-5 rounded-full bg-red-500/50 animate-ping" />
+                        <div className="relative w-7 h-7 rounded-full bg-[#F04444] text-white flex items-center justify-center shadow-lg shadow-red-950">
+                          <MapPin className="w-4 h-4 fill-white text-white" />
+                        </div>
+                      </div>
+                      <div>
+                        <p className="font-display text-sm uppercase tracking-wider text-white leading-tight">
+                          PRAKASTIC'S ACADEMY
+                        </p>
+                        <p className="text-[10px] uppercase font-mono tracking-widest text-[#F04444] font-semibold">
+                          DOJO LOCATION PIN
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-[11px] text-neutral-300 font-sans leading-relaxed pt-1.5 border-t border-[#222222]">
+                      E.B. Nagar, First Cross Road, Medical Nagar, Maruthi Nagar, Veppampalayam, Erode, Tamil Nadu 638012
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
