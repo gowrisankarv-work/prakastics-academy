@@ -46,10 +46,10 @@ export const About: React.FC = () => {
             <div className="relative w-full h-full min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-sm overflow-hidden border border-[#262626] bg-[#141414] shadow-2xl group flex flex-col justify-between">
               {/* Background Image */}
               <img
-                src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=1000&q=85"
-                alt="Prakastic Kickboxing & Kyokushin Karate Training"
+                src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1000&q=85"
+                alt="Prakastic Kickboxing & Kyokushin Karate Male Fighter"
                 onError={handleImageError}
-                className="absolute inset-0 w-full h-full object-cover object-top filter brightness-95 contrast-110 group-hover:scale-105 transition-transform duration-700"
+                className="absolute inset-0 w-full h-full object-cover object-center filter brightness-95 contrast-110 group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
 
