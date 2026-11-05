@@ -60,3 +60,21 @@
   background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 16px 16px;
 }
+
+/* Accessibility: High-contrast focus rings for keyboard navigation */
+:focus-visible {
+  outline: 2px solid #F04444;
+  outline-offset: 2px;
+}
+
+/* Accessibility: WCAG 2.2 AA prefers-reduced-motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

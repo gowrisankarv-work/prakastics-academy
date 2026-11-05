@@ -13,6 +13,22 @@ interface GalleryItem {
 export const Gallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSelectedImage(null);
+    };
+    if (selectedImage) {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', handleKeyDown);
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectedImage]);
+
   const galleryItems: GalleryItem[] = [
     {
       id: 1,
@@ -76,8 +92,17 @@ export const Gallery: React.FC = () => {
           {galleryItems.map((item) => (
             <div
               key={item.id}
+              role="button"
+              tabIndex={0}
+              aria-label={`View enlarged ${item.title}`}
               onClick={() => setSelectedImage(item)}
-              className={`group relative overflow-hidden rounded-sm border border-[#242424] hover:border-red-500/50 bg-[#171717] cursor-pointer transition-all duration-300 shadow-xl ${item.span}`}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setSelectedImage(item);
+                }
+              }}
+              className={`group relative overflow-hidden rounded-sm border border-[#242424] hover:border-red-500/50 bg-[#171717] cursor-pointer transition-all duration-300 shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 ${item.span}`}
             >
               <img
                 src={item.image}
@@ -124,10 +149,13 @@ export const Gallery: React.FC = () => {
           <div
             className="relative max-w-4xl w-full bg-[#141414] border border-[#2B2B2B] rounded-sm overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-label={selectedImage.title}
           >
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/70 text-white hover:text-[#F04444] hover:bg-black transition-colors focus-visible:outline-none"
+              className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/70 text-white hover:text-[#F04444] hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
               aria-label="Close image modal"
             >
               <X className="w-6 h-6" />

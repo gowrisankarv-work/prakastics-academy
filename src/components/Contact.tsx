@@ -255,6 +255,7 @@ Sent via Academy Website`;
                     id="fullname"
                     type="text"
                     value={name}
+                    aria-invalid={!!errors.name}
                     onChange={(e) => {
                       setName(e.target.value);
                       if (errors.name) setErrors({ ...errors, name: undefined });
@@ -267,7 +268,7 @@ Sent via Academy Website`;
                     }`}
                   />
                   {errors.name && (
-                    <p className="mt-1.5 text-xs text-red-400 flex items-center gap-1">
+                    <p role="alert" className="mt-1.5 text-xs text-red-400 flex items-center gap-1">
                       <AlertCircle className="w-3.5 h-3.5" />
                       {errors.name}
                     </p>
@@ -287,6 +288,7 @@ Sent via Academy Website`;
                       id="phone"
                       type="tel"
                       value={phone}
+                      aria-invalid={!!errors.phone}
                       onChange={(e) => {
                         setPhone(e.target.value);
                         if (errors.phone) setErrors({ ...errors, phone: undefined });
@@ -300,7 +302,7 @@ Sent via Academy Website`;
                     />
                   </div>
                   {errors.phone && (
-                    <p className="mt-1.5 text-xs text-red-400 flex items-center gap-1">
+                    <p role="alert" className="mt-1.5 text-xs text-red-400 flex items-center gap-1">
                       <AlertCircle className="w-3.5 h-3.5" />
                       {errors.phone}
                     </p>

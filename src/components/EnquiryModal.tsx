@@ -78,7 +78,7 @@ Sent via Academy Website`;
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-lg bg-[#141414] border border-[#2B2B2B] rounded-sm p-6 sm:p-8 shadow-2xl shadow-red-950/40 text-left overflow-hidden"
+        className="relative w-full max-w-lg max-h-[92vh] overflow-y-auto bg-[#141414] border border-[#2B2B2B] rounded-sm p-6 sm:p-8 shadow-2xl shadow-red-950/40 text-left"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
@@ -90,8 +90,8 @@ Sent via Academy Website`;
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 p-1.5 rounded-sm bg-[#1F1F1F] text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors focus-visible:outline-none"
-          aria-label="Close modal"
+          className="absolute top-5 right-5 p-2 rounded-sm bg-[#1F1F1F] text-neutral-400 hover:text-white hover:bg-neutral-800 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+          aria-label="Close free trial booking dialog"
         >
           <X className="w-5 h-5" />
         </button>
