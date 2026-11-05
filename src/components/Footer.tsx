@@ -192,7 +192,7 @@ export const Footer: React.FC = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#F04444] shrink-0 mt-0.5" />
                 <span className="leading-relaxed">
-                  E.B. Nagar, First Cross Road, Medical Nagar, Maruthi Nagar, Veppampalayam, Erode, Tamil Nadu 638012
+                  87, Medical Nagar, EB Nagar, Chettipalayam, Erode, Tamil Nadu 638012
                 </span>
               </div>
               <div className="flex items-start gap-2">

@@ -51,7 +51,7 @@ export const Contact: React.FC<ContactProps> = ({ initialProgram }) => {
 📱 *Phone:* ${phone.trim()}
 🥊 *Batch:* ${batch}
 📝 *Message:* ${message.trim() || 'Requesting Free Trial Class details and training schedule.'}
-📍 *Location Preference:* Thindal, Erode, Tamil Nadu
+📍 *Location Preference:* 87, Medical Nagar, EB Nagar, Chettipalayam, Erode, Tamil Nadu 638012
 -----------------------------------
 Sent via Academy Website`;
 
@@ -103,9 +103,9 @@ Sent via Academy Website`;
                   <div>
                     <p className="text-xs uppercase tracking-wider text-neutral-400">Dojo Address</p>
                     <p className="text-sm sm:text-base font-semibold text-white leading-snug">
-                      E.B. Nagar, First Cross Road, Medical Nagar, Maruthi Nagar, Veppampalayam, Erode, Tamil Nadu 638012
+                      87, Medical Nagar, EB Nagar, Chettipalayam, Erode, Tamil Nadu 638012
                     </p>
-                    <p className="text-xs text-neutral-400 mt-1">Near Thindal • Accessible combat-sports facility</p>
+                    <p className="text-xs text-neutral-400 mt-1">Near Thindal / Chettipalayam • Dedicated combat-sports facility</p>
                   </div>
                 </div>
 
@@ -184,7 +184,7 @@ Sent via Academy Website`;
                   </span>
                 </div>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=E.B.+Nagar,+First+Cross+Road,+Medical+Nagar,+Maruthi+Nagar,+Veppampalayam,+Erode,+Tamil+Nadu+638012"
+                  href="https://www.google.com/maps/search/?api=1&query=87,+Medical+Nagar,+EB+Nagar,+chettipalayam,+Erode,+Tamil+Nadu+638012"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-wider font-semibold text-[#F04444] hover:text-white transition-colors"
@@ -197,8 +197,8 @@ Sent via Academy Website`;
               {/* Map Canvas with Location Highlight Pin */}
               <div className="relative w-full h-72 sm:h-80 bg-[#171717] overflow-hidden group">
                 <iframe
-                  title="Prakastic's Kickboxing Kyokushin Academy - Veppampalayam, Erode"
-                  src="https://maps.google.com/maps?q=E.B.+Nagar,+First+Cross+Road,+Medical+Nagar,+Maruthi+Nagar,+Veppampalayam,+Erode,+Tamil+Nadu+638012&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  title="Prakastic's Kickboxing Kyokushin Academy - 87, Medical Nagar, EB Nagar, Chettipalayam, Erode"
+                  src="https://maps.google.com/maps?q=87,+Medical+Nagar,+EB+Nagar,+chettipalayam,+Erode,+Tamil+Nadu+638012&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   className="w-full h-full border-0 filter invert contrast-125 opacity-75 group-hover:opacity-90 transition-opacity"
                   allowFullScreen
                   loading="lazy"
@@ -225,7 +225,7 @@ Sent via Academy Website`;
                       </div>
                     </div>
                     <p className="text-[11px] text-neutral-300 font-sans leading-relaxed pt-1.5 border-t border-[#222222]">
-                      E.B. Nagar, First Cross Road, Medical Nagar, Maruthi Nagar, Veppampalayam, Erode, Tamil Nadu 638012
+                      87, Medical Nagar, EB Nagar, chettipalayam, Erode, Tamil Nadu 638012
                     </p>
                   </div>
                 </div>
