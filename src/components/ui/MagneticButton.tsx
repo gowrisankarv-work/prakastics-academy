@@ -42,8 +42,8 @@ export const MagneticButton: React.FC<MagneticButtonProps> = ({
 
   const baseClasses = cn(
     'group relative inline-flex items-center justify-center font-display rounded-sm select-none cursor-pointer',
-    'transition-all duration-200 ease-out transform-gpu',
-    'hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]',
+    'transition-all duration-200 ease-out',
+    'active:scale-[0.98]',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]',
     'motion-reduce:transform-none motion-reduce:transition-none',
     variantStyles[variant],
@@ -56,7 +56,7 @@ export const MagneticButton: React.FC<MagneticButtonProps> = ({
       <a href={href} className={baseClasses}>
         <span>{children}</span>
         {icon && (
-          <span className="inline-flex items-center transition-transform duration-200 ease-out group-hover:translate-x-1 shrink-0">
+          <span className="inline-flex items-center transition-transform duration-200 ease-out group-hover:scale-110 shrink-0">
             {icon}
           </span>
         )}
@@ -68,7 +68,7 @@ export const MagneticButton: React.FC<MagneticButtonProps> = ({
     <button className={baseClasses} {...props}>
       <span>{children}</span>
       {icon && (
-        <span className="inline-flex items-center transition-transform duration-200 ease-out group-hover:translate-x-1 shrink-0">
+        <span className="inline-flex items-center transition-transform duration-200 ease-out group-hover:scale-110 shrink-0">
           {icon}
         </span>
       )}
