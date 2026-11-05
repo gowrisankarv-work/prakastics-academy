@@ -75,7 +75,7 @@ export const FreeTrialCTA: React.FC<FreeTrialCTAProps> = ({ onOpenBooking }) => 
                 asAnchor
                 href={whatsappUrl}
                 icon={<MessageCircle className="w-5 h-5 text-[#25D366]" />}
-                className="w-full sm:w-auto text-base hover:border-[#25D366]/50"
+                className="w-full sm:w-auto text-base hover:border-[#25D366]/60 hover:shadow-[0_0_20px_rgba(37,211,102,0.3)]"
               >
                 CHAT ON WHATSAPP
               </MagneticButton>

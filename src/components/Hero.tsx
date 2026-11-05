@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             transition={{ duration: 0.7, delay: 0.15 }}
           >
             <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-display uppercase tracking-tight text-white leading-[0.92] mb-6">
-              <span className="block hover:text-[#F04444] transition-colors duration-300">DISCIPLINE.</span>
+              <span className="block text-white">DISCIPLINE.</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-100 to-neutral-400">
                 STRENGTH.
               </span>

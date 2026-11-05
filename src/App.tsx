@@ -77,7 +77,7 @@ export function App() {
         {showBackToTop && (
           <button
             onClick={scrollToTop}
-            className="w-10 h-10 rounded-full bg-[#171717] border border-[#2B2B2B] text-neutral-300 hover:text-white hover:border-red-500 flex items-center justify-center transition-all shadow-lg active:scale-95 focus-visible:outline-none"
+            className="w-10 h-10 rounded-full bg-[#171717] border border-[#2B2B2B] text-neutral-300 hover:text-white hover:border-red-500 hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(240,68,68,0.3)] flex items-center justify-center transition-all duration-200 active:translate-y-0 active:scale-95 focus-visible:outline-none"
             aria-label="Scroll back to top"
           >
             <ArrowUp className="w-4 h-4" />
@@ -88,10 +88,10 @@ export function App() {
           href="https://wa.me/919629446869?text=Hello%20Prakastic's%20Academy!%20I%20would%20like%20to%20enquire%20about%20Kickboxing%20%26%20Kyokushin%20training%20at%20Thindal%2C%20Erode."
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#25D366] text-white font-semibold text-xs uppercase tracking-wider shadow-2xl hover:bg-[#20ba5a] transition-all hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400"
+          className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#25D366] text-white font-semibold text-xs uppercase tracking-wider shadow-2xl hover:bg-[#20ba5a] hover:-translate-y-0.5 hover:shadow-[0_0_25px_rgba(37,211,102,0.45)] active:translate-y-0 active:scale-[0.98] transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400"
           aria-label="Chat directly on WhatsApp"
         >
-          <MessageCircle className="w-5 h-5 fill-white text-[#25D366]" />
+          <MessageCircle className="w-5 h-5 fill-white text-[#25D366] transition-transform duration-200 group-hover:scale-105" />
           <span className="hidden sm:inline font-sans font-bold">Chat on WhatsApp</span>
         </a>
       </div>
