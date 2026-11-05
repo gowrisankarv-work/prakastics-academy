@@ -50,7 +50,7 @@ export const Contact: React.FC<ContactProps> = ({ initialProgram }) => {
 📱 *Phone:* ${phone.trim()}
 🥊 *Batch:* ${batch}
 📝 *Message:* ${message.trim() || 'Requesting Free Trial Class details and training schedule.'}
-📍 *Location Preference:* Thindal, Tamil Nadu
+📍 *Location Preference:* Thindal, Erode, Tamil Nadu
 -----------------------------------
 Sent via Academy Website`;
 
@@ -101,7 +101,7 @@ Sent via Academy Website`;
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-neutral-400">Location</p>
-                    <p className="text-sm sm:text-base font-semibold text-white">Thindal, Tamil Nadu, India</p>
+                    <p className="text-sm sm:text-base font-semibold text-white">THINDAL, ERODE, TAMIL NADU</p>
                     <p className="text-xs text-neutral-500 mt-0.5">Easily accessible hub for martial arts training</p>
                   </div>
                 </div>
@@ -176,13 +176,13 @@ Sent via Academy Website`;
               <div className="p-4 border-b border-[#262626] flex items-center justify-between">
                 <span className="text-xs uppercase tracking-wider text-neutral-300 font-semibold flex items-center gap-2">
                   <MapPin className="w-3.5 h-3.5 text-[#F04444]" />
-                  Thindal Map Area
+                  Thindal, Erode Map Area
                 </span>
                 <span className="text-[10px] text-neutral-500 font-mono">Configurable Location</span>
               </div>
               <div className="relative w-full h-48 bg-[#171717]">
                 <iframe
-                  title="Academy Location Area - Thindal, Tamil Nadu"
+                  title="Academy Location Area - Thindal, Erode, Tamil Nadu"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15652.883908865487!2d77.67484643171387!3d11.314949791484838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f014e71d34f%3A0x67dbdb3dbcf6be66!2sThindal%2C%20Erode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                   className="w-full h-full border-0 filter invert contrast-125 opacity-75"
                   allowFullScreen

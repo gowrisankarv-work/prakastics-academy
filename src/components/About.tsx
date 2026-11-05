@@ -37,7 +37,7 @@ export const About: React.FC = () => {
         <SectionHeading
           badge="OUR PHILOSOPHY"
           title="MORE THAN FIGHTING. IT'S A WAY OF LIFE."
-          subtitle="At Prakastic's Kickboxing Kyokushin Academy in Thindal, we believe true martial arts training transforms the body and strengthens the mind through disciplined practice."
+          subtitle="At Prakastic's Kickboxing Kyokushin Academy in Thindal, Erode, Tamil Nadu, we believe true martial arts training transforms the body and strengthens the mind through disciplined practice."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
@@ -84,7 +84,7 @@ export const About: React.FC = () => {
                           PRAKASTIC'S DOJO
                         </p>
                         <span className="text-[9px] uppercase font-mono tracking-wider text-[#F04444] px-1.5 py-0.5 rounded-sm bg-red-950/40 border border-red-500/30">
-                          THINDAL
+                          THINDAL, ERODE
                         </span>
                       </div>
                       <p className="text-[10px] tracking-wider uppercase font-mono text-neutral-300 font-semibold">

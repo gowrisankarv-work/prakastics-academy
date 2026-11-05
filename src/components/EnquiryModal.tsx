@@ -62,8 +62,8 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
 👤 *Name:* ${name.trim()}
 📱 *Phone:* ${phone.trim()}
 🥊 *Program:* ${batch}
-📝 *Notes:* ${message.trim() || 'Requesting 1 Free Trial Class booking in Thindal.'}
-📍 *Location:* Thindal, Tamil Nadu
+📝 *Notes:* ${message.trim() || 'Requesting 1 Free Trial Class booking in Thindal, Erode.'}
+📍 *Location:* Thindal, Erode, Tamil Nadu
 -----------------------------------
 Sent via Academy Website`;
 
@@ -116,7 +116,7 @@ Sent via Academy Website`;
               BOOK YOUR FREE TRIAL
             </h3>
             <p className="text-xs sm:text-sm text-neutral-400 mt-0.5">
-              Prakastic's Kickboxing &amp; Kyokushin Academy • Thindal
+              Prakastic's Kickboxing &amp; Kyokushin Academy • Thindal, Erode, Tamil Nadu
             </p>
           </div>
         </div>

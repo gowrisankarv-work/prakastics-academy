@@ -8,7 +8,7 @@ interface FreeTrialCTAProps {
 
 export const FreeTrialCTA: React.FC<FreeTrialCTAProps> = ({ onOpenBooking }) => {
   const whatsappUrl = `https://wa.me/919629446869?text=${encodeURIComponent(
-    "Hello Prakastic's Academy! I would like to claim my ONE FREE TRIAL CLASS for Kickboxing & Kyokushin Karate at Thindal."
+    "Hello Prakastic's Academy! I would like to claim my ONE FREE TRIAL CLASS for Kickboxing & Kyokushin Karate at Thindal, Erode."
   )}`;
 
   return (

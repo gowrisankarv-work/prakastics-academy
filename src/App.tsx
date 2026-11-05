@@ -85,7 +85,7 @@ export function App() {
         )}
 
         <a
-          href="https://wa.me/919629446869?text=Hello%20Prakastic's%20Academy!%20I%20would%20like%20to%20enquire%20about%20Kickboxing%20%26%20Kyokushin%20training%20at%20Thindal."
+          href="https://wa.me/919629446869?text=Hello%20Prakastic's%20Academy!%20I%20would%20like%20to%20enquire%20about%20Kickboxing%20%26%20Kyokushin%20training%20at%20Thindal%2C%20Erode."
           target="_blank"
           rel="noopener noreferrer"
           className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#25D366] text-white font-semibold text-xs uppercase tracking-wider shadow-2xl hover:bg-[#20ba5a] transition-all hover:scale-105 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400"

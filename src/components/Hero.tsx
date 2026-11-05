@@ -40,7 +40,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-[#171717]/90 border border-red-500/30 text-white shadow-lg backdrop-blur-md">
                 <MapPin className="w-3.5 h-3.5 text-[#F04444]" />
                 <span className="text-xs uppercase tracking-[0.2em] font-semibold text-neutral-200">
-                  THINDAL, TAMIL NADU
+                  THINDAL, ERODE, TAMIL NADU
                 </span>
               </div>
 

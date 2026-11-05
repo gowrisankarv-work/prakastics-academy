@@ -114,7 +114,7 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
                       <Sparkles className="w-3.5 h-3.5 text-[#F04444]" />
                       1 Free Trial Included
                     </span>
-                    <span className="text-neutral-500 font-mono">Location: Thindal</span>
+                    <span className="text-neutral-500 font-mono">Location: Thindal, Erode</span>
                   </div>
 
                   <MagneticButton

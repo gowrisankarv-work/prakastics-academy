@@ -162,7 +162,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               className="flex items-center gap-2 text-xs font-semibold text-neutral-300 px-3 py-2 rounded-sm bg-[#171717] border border-[#2B2B2B]"
             >
               <Phone className="w-4 h-4 text-[#F04444]" />
-              <span>+91 96294 46869 (Thindal)</span>
+              <span>+91 96294 46869 (Thindal, Erode)</span>
             </a>
             <button
               onClick={() => {

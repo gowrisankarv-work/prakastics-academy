@@ -82,7 +82,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-sm text-neutral-400 leading-relaxed max-w-sm pt-2">
-              Premier martial arts training center located at Thindal, Tamil Nadu. Committed to teaching the authentic full-contact Kyokushin karate discipline, power kickboxing, and practical self-defence.
+              Premier martial arts training center located at Thindal, Erode, Tamil Nadu. Committed to teaching the authentic full-contact Kyokushin karate discipline, power kickboxing, and practical self-defence.
             </p>
 
             <div className="flex items-center gap-3 pt-2">
@@ -191,7 +191,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-2.5 text-xs">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#F04444] shrink-0 mt-0.5" />
-                <span>Thindal, Tamil Nadu, India</span>
+                <span>THINDAL, ERODE, TAMIL NADU</span>
               </div>
               <div className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-[#F04444] shrink-0 mt-0.5" />
@@ -217,7 +217,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Copyright and Legal Bar */}
         <div className="mt-16 pt-8 border-t border-[#171717] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
           <p>
-            © {currentYear} Prakastic's Kickboxing Kyokushin Academy. All rights reserved. Thindal, Tamil Nadu.
+            © {currentYear} Prakastic's Kickboxing Kyokushin Academy. All rights reserved. Thindal, Erode, Tamil Nadu.
           </p>
           <div className="flex items-center gap-2 text-[11px]">
             <ShieldCheck className="w-3.5 h-3.5 text-[#F04444]" />

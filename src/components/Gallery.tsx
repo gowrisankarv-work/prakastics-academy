@@ -149,7 +149,7 @@ export const Gallery: React.FC = () => {
                   {selectedImage.title}
                 </h4>
               </div>
-              <p className="text-xs text-neutral-400">Prakastic's Kickboxing Kyokushin Academy • Thindal</p>
+              <p className="text-xs text-neutral-400">Prakastic's Kickboxing Kyokushin Academy • Thindal, Erode</p>
             </div>
           </div>
         </div>
