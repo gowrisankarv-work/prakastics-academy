@@ -39,7 +39,7 @@ export const Gallery: React.FC = () => {
       id: 4,
       title: 'Controlled Sparring Sessions',
       category: 'Combat Readiness',
-      image: 'https://images.unsplash.com/photo-1509563457123-ab5432813449?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?auto=format&fit=crop&w=800&q=80',
       span: 'md:col-span-1 md:row-span-1',
     },
     {
@@ -57,6 +57,10 @@ export const Gallery: React.FC = () => {
       span: 'md:col-span-2 md:row-span-1',
     },
   ];
+
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    e.currentTarget.src = 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=800&q=80';
+  };
 
   return (
     <section id="gallery" className="py-20 sm:py-28 bg-[#0F0F0F] relative">
@@ -78,6 +82,7 @@ export const Gallery: React.FC = () => {
               <img
                 src={item.image}
                 alt={item.title}
+                onError={handleImageError}
                 className="w-full h-full object-cover object-center filter brightness-90 contrast-110 group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
@@ -131,6 +136,7 @@ export const Gallery: React.FC = () => {
             <img
               src={selectedImage.image}
               alt={selectedImage.title}
+              onError={handleImageError}
               className="w-full max-h-[75vh] object-cover"
             />
 
