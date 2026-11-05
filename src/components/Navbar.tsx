@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, ShieldCheck, Flame } from 'lucide-react';
+import { Menu, X, Phone, ShieldCheck } from 'lucide-react';
 import { MagneticButton } from '@/components/ui/MagneticButton';
 
 interface NavbarProps {
@@ -59,15 +59,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             href="#home"
             className="group flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-sm"
           >
-            <div className="w-10 h-10 rounded-sm bg-[#171717] border border-red-500/40 flex items-center justify-center text-[#F04444] group-hover:border-red-500 group-hover:shadow-[0_0_15px_rgba(240,68,68,0.4)] transition-all">
-              <Flame className="w-6 h-6 fill-[#F04444]" />
+            <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-full p-0.5 bg-gradient-to-b from-[#F04444] via-[#7F1D1D] to-[#121212] border border-red-500/50 group-hover:border-red-400 group-hover:shadow-[0_0_20px_rgba(240,68,68,0.5)] transition-all duration-300 overflow-hidden flex items-center justify-center shrink-0">
+              <img
+                src="/logos/primary-emblem-64.png"
+                alt="Prakastic's Kickboxing Kyokushin Academy Official Emblem"
+                className="w-full h-full object-contain transform group-hover:scale-105 transition-transform"
+                width={48}
+                height={48}
+              />
             </div>
             <div className="flex flex-col">
               <span className="font-display text-xl sm:text-2xl font-bold tracking-wider text-white uppercase group-hover:text-[#F04444] transition-colors leading-none">
                 PRAKASTIC'S
               </span>
               <span className="text-[10px] sm:text-xs tracking-[0.18em] uppercase text-neutral-400 font-sans font-medium mt-0.5">
-                KICKBOXING KYOKUSHIN ACADEMY
+                KICKBOXING &amp; KYOKUSHIN ACADEMY
               </span>
             </div>
           </a>

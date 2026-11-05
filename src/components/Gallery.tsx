@@ -18,48 +18,48 @@ export const Gallery: React.FC = () => {
       id: 1,
       title: 'Power & Precision Pad Drills',
       category: 'Kickboxing Training',
-      image: 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1200&q=80',
+      image: '/images/gallery/kickboxing-pad-drills.jpg',
       span: 'md:col-span-2 md:row-span-2',
     },
     {
       id: 2,
       title: 'Traditional Kyokushin Kata & Form',
       category: 'Karate Technique',
-      image: 'https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=800&q=80',
+      image: '/images/gallery/kyokushin-kata.jpg',
       span: 'md:col-span-1 md:row-span-1',
     },
     {
       id: 3,
       title: 'Heavy Bag Conditioning',
       category: 'Striking Endurance',
-      image: 'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80',
+      image: '/images/gallery/heavy-bag-conditioning.jpg',
       span: 'md:col-span-1 md:row-span-1',
     },
     {
       id: 4,
       title: 'Controlled Sparring Sessions',
       category: 'Combat Readiness',
-      image: 'https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?auto=format&fit=crop&w=800&q=80',
+      image: '/images/gallery/kyokushin-sparring.jpg',
       span: 'md:col-span-1 md:row-span-1',
     },
     {
       id: 5,
-      title: 'Functional Combat Fitness',
-      category: 'Athletic Conditioning',
-      image: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80',
+      title: 'Youth Discipline & Sparring',
+      category: 'Youth Martial Arts',
+      image: '/images/gallery/functional-conditioning.jpg',
       span: 'md:col-span-1 md:row-span-1',
     },
     {
       id: 6,
       title: 'Dojo Discipline & Camaraderie',
-      category: 'Group Training',
-      image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80',
+      category: 'Group Kihon & Kiai',
+      image: '/images/gallery/dojo-group-training.jpg',
       span: 'md:col-span-2 md:row-span-1',
     },
   ];
 
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    e.currentTarget.src = 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=800&q=80';
+    e.currentTarget.src = '/images/hero/kyokushin-hero.jpg';
   };
 
   return (

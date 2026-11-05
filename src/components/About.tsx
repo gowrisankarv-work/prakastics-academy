@@ -46,7 +46,7 @@ export const About: React.FC = () => {
             <div className="relative w-full h-full min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-sm overflow-hidden border border-[#262626] bg-[#141414] shadow-2xl group flex flex-col justify-between">
               {/* Background Image: Male Kyokushin Karate Practitioner */}
               <img
-                src="https://images.unsplash.com/photo-1678804481496-eb44c1259dbb?auto=format&fit=crop&w=1000&q=85"
+                src="/images/about/kyokushin-about-dojo.jpg"
                 alt="Prakastic Kickboxing & Kyokushin Karate Male Practitioner in Gi"
                 onError={handleImageError}
                 className="absolute inset-0 w-full h-full object-cover object-top filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700"
@@ -67,17 +67,33 @@ export const About: React.FC = () => {
 
               {/* Bottom Dojo Location & Info Badge */}
               <div className="relative z-10 p-5 sm:p-6">
-                <div className="p-4 rounded-sm bg-[#121212]/95 backdrop-blur-md border border-[#2B2B2B] shadow-xl space-y-1.5">
-                  <div className="flex items-center justify-between">
-                    <p className="font-display text-lg uppercase tracking-wider text-white">
-                      PRAKASTIC'S DOJO
-                    </p>
-                    <span className="text-[10px] uppercase font-mono tracking-wider text-[#F04444] px-2 py-0.5 rounded-sm bg-red-950/40 border border-red-500/30">
-                      THINDAL
-                    </span>
+                <div className="p-4 rounded-sm bg-[#121212]/95 backdrop-blur-md border border-[#2B2B2B] shadow-xl">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-12 h-12 rounded-full p-0.5 bg-gradient-to-b from-[#D4AF37] via-red-600 to-black border border-[#D4AF37]/60 shrink-0 overflow-hidden shadow-md">
+                      <img
+                        src="/logos/primary-emblem-64.png"
+                        alt="Prakastic Academy Champion Emblem"
+                        className="w-full h-full object-contain"
+                        width={48}
+                        height={48}
+                      />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <p className="font-display text-lg uppercase tracking-wider text-white">
+                          PRAKASTIC'S DOJO
+                        </p>
+                        <span className="text-[9px] uppercase font-mono tracking-wider text-[#F04444] px-1.5 py-0.5 rounded-sm bg-red-950/40 border border-red-500/30">
+                          THINDAL
+                        </span>
+                      </div>
+                      <p className="text-[10px] tracking-wider uppercase font-mono text-[#D4AF37] font-semibold">
+                        CHAMPION 2026 • DEFENCE LAND
+                      </p>
+                    </div>
                   </div>
                   <p className="text-xs text-neutral-300 font-sans leading-relaxed">
-                    Full-contact Kyokushin Karate & Kickboxing conditioning under disciplined coaching.
+                    Authentic Kyokushin Karate &amp; Kickboxing conditioning under championship-level disciplined coaching.
                   </p>
                 </div>
               </div>

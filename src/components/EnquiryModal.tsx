@@ -96,18 +96,29 @@ Sent via Academy Website`;
           <X className="w-5 h-5" />
         </button>
 
-        {/* Title */}
-        <div className="mb-6">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mb-2 rounded-sm bg-red-950/50 border border-red-500/30 text-[#F04444] text-[10px] font-bold uppercase tracking-widest">
-            <Sparkles className="w-3 h-3" />
-            <span>ONE FREE TRIAL CLASS</span>
+        {/* Title & Brand Header */}
+        <div className="mb-6 flex items-start gap-4">
+          <div className="w-12 h-12 rounded-full p-0.5 bg-gradient-to-b from-[#F04444] via-[#7F1D1D] to-[#121212] border border-red-500/50 shadow-md shrink-0 overflow-hidden mt-0.5">
+            <img
+              src="/logos/primary-emblem-64.png"
+              alt="Prakastic Academy Crest"
+              className="w-full h-full object-contain"
+              width={48}
+              height={48}
+            />
           </div>
-          <h3 id="modal-title" className="text-2xl sm:text-3xl font-display uppercase tracking-wider text-white">
-            BOOK YOUR FREE TRIAL
-          </h3>
-          <p className="text-xs sm:text-sm text-neutral-400 mt-1">
-            Prakastic's Kickboxing Kyokushin Academy • Thindal
-          </p>
+          <div>
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mb-1.5 rounded-sm bg-red-950/50 border border-red-500/30 text-[#F04444] text-[10px] font-bold uppercase tracking-widest">
+              <Sparkles className="w-3 h-3" />
+              <span>ONE FREE TRIAL CLASS</span>
+            </div>
+            <h3 id="modal-title" className="text-2xl sm:text-3xl font-display uppercase tracking-wider text-white">
+              BOOK YOUR FREE TRIAL
+            </h3>
+            <p className="text-xs sm:text-sm text-neutral-400 mt-0.5">
+              Prakastic's Kickboxing &amp; Kyokushin Academy • Thindal
+            </p>
+          </div>
         </div>
 
         {/* Form */}

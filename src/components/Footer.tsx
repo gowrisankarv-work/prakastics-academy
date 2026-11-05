@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, MapPin, Phone, MessageCircle, Instagram, ShieldCheck } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Instagram, ShieldCheck } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -10,9 +10,15 @@ export const Footer: React.FC = () => {
       <div className="border-b border-[#1A1A1A] py-10 bg-[#0B0B0B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-sm bg-[#171717] border border-red-500/40 flex items-center justify-center text-[#F04444]">
-                <Flame className="w-6 h-6 fill-[#F04444]" />
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full p-0.5 bg-gradient-to-b from-red-600 to-black border border-red-500/50 flex items-center justify-center shrink-0 overflow-hidden shadow-lg shadow-red-950/40">
+                <img
+                  src="/logos/primary-emblem-64.png"
+                  alt="Prakastic Academy Crest"
+                  className="w-full h-full object-contain"
+                  width={48}
+                  height={48}
+                />
               </div>
               <div>
                 <h4 className="font-display text-xl sm:text-2xl uppercase tracking-wider text-white">
@@ -49,17 +55,29 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-sm bg-[#141414] border border-red-500/40 flex items-center justify-center text-[#F04444]">
-                <Flame className="w-5 h-5 fill-[#F04444]" />
+            <div className="flex items-center gap-4">
+              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full p-1 bg-gradient-to-b from-[#F04444] via-[#7F1D1D] to-[#121212] border border-red-500/50 shadow-[0_0_25px_rgba(240,68,68,0.3)] shrink-0 overflow-hidden">
+                <img
+                  src="/logos/primary-emblem-192.png"
+                  alt="Prakastic's Kickboxing Kyokushin Academy Official Emblem"
+                  className="w-full h-full object-contain"
+                  width={80}
+                  height={80}
+                />
               </div>
               <div>
-                <p className="font-display text-2xl font-bold tracking-wider text-white uppercase leading-none">
+                <p className="font-display text-2xl sm:text-3xl font-bold tracking-wider text-white uppercase leading-none">
                   PRAKASTIC'S
                 </p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-neutral-400 font-sans mt-0.5">
-                  KICKBOXING KYOKUSHIN ACADEMY
+                <p className="text-[11px] sm:text-xs tracking-[0.2em] uppercase text-[#F04444] font-sans font-bold mt-1">
+                  KICKBOXING &amp; KYOKUSHIN ACADEMY
                 </p>
+                <div className="inline-flex items-center gap-1.5 mt-1.5 px-2 py-0.5 rounded-sm bg-[#1A1A1A] border border-[#2E2E2E]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
+                  <span className="text-[9px] tracking-[0.15em] uppercase text-neutral-300 font-mono font-semibold">
+                    CHAMPION 2026 • DEFENCE LAND
+                  </span>
+                </div>
               </div>
             </div>
 

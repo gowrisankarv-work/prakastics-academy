@@ -73,13 +73,24 @@ Sent via Academy Website`;
           {/* Left Column: Academy Info Cards */}
           <div className="lg:col-span-5 space-y-6">
             <div className="p-6 sm:p-8 rounded-sm bg-[#141414] border border-[#262626] space-y-6 shadow-2xl">
-              <div>
-                <span className="text-[11px] uppercase tracking-widest text-[#F04444] font-semibold">
-                  DOJO LOCATION & CONTACT
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-display uppercase tracking-wide text-white mt-1">
-                  PRAKASTIC'S KICKBOXING KYOKUSHIN ACADEMY
-                </h3>
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-full p-0.5 bg-gradient-to-b from-[#F04444] via-[#7F1D1D] to-[#121212] border border-red-500/50 shrink-0 overflow-hidden shadow-lg shadow-red-950/40">
+                  <img
+                    src="/logos/primary-emblem-64.png"
+                    alt="Prakastic Academy Crest"
+                    className="w-full h-full object-contain"
+                    width={56}
+                    height={56}
+                  />
+                </div>
+                <div>
+                  <span className="text-[10px] uppercase tracking-widest text-[#F04444] font-semibold">
+                    DOJO LOCATION &amp; CONTACT
+                  </span>
+                  <h3 className="text-xl sm:text-2xl font-display uppercase tracking-wide text-white mt-0.5">
+                    PRAKASTIC'S KICKBOXING &amp; KYOKUSHIN ACADEMY
+                  </h3>
+                </div>
               </div>
 
               <div className="space-y-4 pt-2">

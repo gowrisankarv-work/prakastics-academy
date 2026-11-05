@@ -15,8 +15,7 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
       badge: 'STRENGTH & CONDITIONING',
       description:
         'Develop explosive full-body strength, improve cardiovascular conditioning, learn practical kickboxing and Kyokushin fighting techniques, and forge genuine self-confidence.',
-      image:
-        'https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=1000&q=80',
+      image: '/images/programs/adults/adult-karate-training.jpg',
       highlights: [
         'Full-contact Kyokushin techniques & defensive footwork',
         'High-intensity kickboxing pad work & heavy bag drills',
@@ -32,8 +31,7 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
       badge: 'DISCIPLINE & CHARACTER',
       description:
         'Help children develop lifelong discipline, agile physical fitness, motor coordination, healthy self-confidence, and fundamental martial arts skills in a safe environment.',
-      image:
-        'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=80',
+      image: '/images/programs/kids/kids-karate-training.jpg',
       highlights: [
         'Respect, focus, and traditional dojo etiquette',
         'Agility, balance, flexibility, and motor coordination',
@@ -65,6 +63,9 @@ export const Programs: React.FC<ProgramsProps> = ({ onSelectProgram }) => {
                 <img
                   src={program.image}
                   alt={program.name}
+                  onError={(e) => {
+                    e.currentTarget.src = '/images/hero/kyokushin-hero.jpg';
+                  }}
                   className="w-full h-full object-cover object-center filter brightness-90 group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />

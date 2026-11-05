@@ -13,10 +13,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       {/* Background Image with Dark Cinematic Overlays */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=2000&q=85"
-          alt="Kickboxing and Kyokushin Karate Training"
-          className="w-full h-full object-cover object-center filter brightness-[0.38] contrast-125 scale-105 transform animate-in fade-in duration-1000"
+          src="/images/hero/kyokushin-hero.jpg"
+          alt="Prakastic Kyokushin Karate and Kickboxing Training Arena"
+          className="w-full h-full object-cover object-center filter brightness-[0.42] contrast-125 scale-105 transform animate-in fade-in duration-1000"
           loading="eager"
+          fetchPriority="high"
         />
         {/* Multi-layered Vignette & Gradients */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/60 to-[#0B0B0B]/80" />
@@ -27,26 +28,40 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="max-w-4xl">
-          {/* Top Location & Academy Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-wrap items-center gap-3 mb-6"
-          >
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-[#171717]/90 border border-red-500/30 text-white shadow-lg backdrop-blur-md">
-              <MapPin className="w-3.5 h-3.5 text-[#F04444]" />
-              <span className="text-xs uppercase tracking-[0.2em] font-semibold text-neutral-200">
-                THINDAL, TAMIL NADU
-              </span>
-            </div>
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 xl:gap-14">
+          <div className="max-w-3xl">
+            {/* Top Location & Academy Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="flex flex-wrap items-center gap-3 mb-6"
+            >
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-sm bg-[#171717]/90 border border-red-500/30 text-white shadow-lg backdrop-blur-md">
+                <MapPin className="w-3.5 h-3.5 text-[#F04444]" />
+                <span className="text-xs uppercase tracking-[0.2em] font-semibold text-neutral-200">
+                  THINDAL, TAMIL NADU
+                </span>
+              </div>
 
-            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm bg-red-600/20 border border-red-500/40 text-[#F04444] text-xs font-bold uppercase tracking-wider">
-              <Flame className="w-3.5 h-3.5 fill-[#F04444]" />
-              <span>SPECIAL OFFER: ONE FREE TRIAL CLASS</span>
-            </div>
-          </motion.div>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-[#171717]/90 border border-[#D4AF37]/50 text-white shadow-lg backdrop-blur-md">
+                <img
+                  src="/logos/primary-emblem-64.png"
+                  alt="Official Crest"
+                  className="w-4 h-4 object-contain"
+                  width={16}
+                  height={16}
+                />
+                <span className="text-xs uppercase tracking-[0.16em] font-semibold text-[#F3E5AB]">
+                  CHAMPION 2026 • DEFENCE LAND
+                </span>
+              </div>
+
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm bg-red-600/20 border border-red-500/40 text-[#F04444] text-xs font-bold uppercase tracking-wider">
+                <Flame className="w-3.5 h-3.5 fill-[#F04444]" />
+                <span>SPECIAL OFFER: ONE FREE TRIAL CLASS</span>
+              </div>
+            </motion.div>
 
           {/* Main Cinematic Headline */}
           <motion.div
@@ -141,7 +156,40 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
           </motion.div>
         </div>
+
+        {/* Official Champion Emblem Badge on Desktop */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
+          className="hidden lg:flex flex-col items-center justify-center shrink-0 self-center"
+        >
+          <div className="relative group p-2">
+            {/* Outer Glow Halo */}
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-red-600/30 via-red-500/10 to-yellow-500/20 blur-2xl group-hover:blur-3xl transition-all duration-700 pointer-events-none" />
+            
+            <div className="relative w-64 h-64 xl:w-80 xl:h-80 rounded-full p-2 bg-gradient-to-b from-[#D4AF37]/50 via-[#171717] to-[#0B0B0B] border-2 border-[#D4AF37]/60 shadow-[0_0_50px_rgba(0,0,0,0.9)] backdrop-blur-sm flex items-center justify-center">
+              <img
+                src="/logos/primary-emblem.png"
+                alt="Prakastic's Kickboxing Kyokushin Academy Official Logo - Champion 2026 Defence Land"
+                className="w-full h-full object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.9)] transform group-hover:scale-105 transition-transform duration-500"
+                width={320}
+                height={320}
+                loading="eager"
+              />
+            </div>
+
+            {/* Bottom Credential Ribbon */}
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-4 py-1.5 rounded-full bg-[#121212]/95 border border-[#D4AF37]/70 shadow-2xl flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
+              <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#F3E5AB]">
+                CHAMPION 2026 • DEFENCE LAND
+              </span>
+            </div>
+          </div>
+        </motion.div>
       </div>
+    </div>
     </section>
   );
 };
