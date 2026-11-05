@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 </span>
               </div>
 
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-[#171717]/90 border border-[#D4AF37]/50 text-white shadow-lg backdrop-blur-md">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-sm bg-[#171717]/90 border border-red-500/40 text-white shadow-lg backdrop-blur-md">
                 <img
                   src="/logos/primary-emblem-64.png"
                   alt="Official Crest"
@@ -52,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   width={16}
                   height={16}
                 />
-                <span className="text-xs uppercase tracking-[0.16em] font-semibold text-[#F3E5AB]">
+                <span className="text-xs uppercase tracking-[0.16em] font-semibold text-white">
                   CHAMPION 2026 • DEFENCE LAND
                 </span>
               </div>
@@ -166,9 +166,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         >
           <div className="relative group p-2">
             {/* Outer Glow Halo */}
-            <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-red-600/30 via-red-500/10 to-yellow-500/20 blur-2xl group-hover:blur-3xl transition-all duration-700 pointer-events-none" />
+            <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-red-600/30 via-red-500/15 to-transparent blur-2xl group-hover:blur-3xl transition-all duration-700 pointer-events-none" />
             
-            <div className="relative w-64 h-64 xl:w-80 xl:h-80 rounded-full p-2 bg-gradient-to-b from-[#D4AF37]/50 via-[#171717] to-[#0B0B0B] border-2 border-[#D4AF37]/60 shadow-[0_0_50px_rgba(0,0,0,0.9)] backdrop-blur-sm flex items-center justify-center">
+            <div className="relative w-64 h-64 xl:w-80 xl:h-80 rounded-full p-2 bg-gradient-to-b from-red-600/40 via-[#171717] to-[#0B0B0B] border-2 border-red-500/50 shadow-[0_0_50px_rgba(0,0,0,0.9)] backdrop-blur-sm flex items-center justify-center">
               <img
                 src="/logos/primary-emblem.png"
                 alt="Prakastic's Kickboxing Kyokushin Academy Official Logo - Champion 2026 Defence Land"
@@ -180,9 +180,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
 
             {/* Bottom Credential Ribbon */}
-            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-4 py-1.5 rounded-full bg-[#121212]/95 border border-[#D4AF37]/70 shadow-2xl flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
-              <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-[#F3E5AB]">
+            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-4 py-1.5 rounded-full bg-[#121212]/95 border border-red-500/60 shadow-2xl flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-[#F04444] animate-pulse" />
+              <span className="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-white">
                 CHAMPION 2026 • DEFENCE LAND
               </span>
             </div>

@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
                   KICKBOXING &amp; KYOKUSHIN ACADEMY
                 </p>
                 <div className="inline-flex items-center gap-1.5 mt-1.5 px-2 py-0.5 rounded-sm bg-[#1A1A1A] border border-[#2E2E2E]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#F04444]" />
                   <span className="text-[9px] tracking-[0.15em] uppercase text-neutral-300 font-mono font-semibold">
                     CHAMPION 2026 • DEFENCE LAND
                   </span>

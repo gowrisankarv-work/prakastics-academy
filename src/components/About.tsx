@@ -69,7 +69,7 @@ export const About: React.FC = () => {
               <div className="relative z-10 p-5 sm:p-6">
                 <div className="p-4 rounded-sm bg-[#121212]/95 backdrop-blur-md border border-[#2B2B2B] shadow-xl">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 rounded-full p-0.5 bg-gradient-to-b from-[#D4AF37] via-red-600 to-black border border-[#D4AF37]/60 shrink-0 overflow-hidden shadow-md">
+                    <div className="w-12 h-12 rounded-full p-0.5 bg-gradient-to-b from-[#F04444] via-red-900 to-black border border-red-500/50 shrink-0 overflow-hidden shadow-md">
                       <img
                         src="/logos/primary-emblem-64.png"
                         alt="Prakastic Academy Champion Emblem"
@@ -87,7 +87,7 @@ export const About: React.FC = () => {
                           THINDAL
                         </span>
                       </div>
-                      <p className="text-[10px] tracking-wider uppercase font-mono text-[#D4AF37] font-semibold">
+                      <p className="text-[10px] tracking-wider uppercase font-mono text-neutral-300 font-semibold">
                         CHAMPION 2026 • DEFENCE LAND
                       </p>
                     </div>
